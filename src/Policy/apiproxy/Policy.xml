@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<APIProxy revision="5" name="Policy">
+    <ConfigurationVersion majorVersion="4" minorVersion="0"/>
+    <CreatedAt>1460726017651</CreatedAt>
+    <CreatedBy>arnnab.tripathy@tcs.com</CreatedBy>
+    <Description>Hello World App</Description>
+    <DisplayName>Policy</DisplayName>
+    <LastModifiedAt>1460726519953</LastModifiedAt>
+    <LastModifiedBy>arnnab.tripathy@tcs.com</LastModifiedBy>
+    <Policies>
+        <Policy>Assign-Message-1</Policy>
+        <Policy>apiquota</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources/>
+    <TargetServers/>
+    <TargetEndpoints>
+        <TargetEndpoint>default</TargetEndpoint>
+    </TargetEndpoints>
+    <validate>false</validate>
+</APIProxy>

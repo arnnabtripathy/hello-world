@@ -1,0 +1,29 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "Hello World App",
+    "version": "5.0.0",
+    "title": "Policy",
+    "contact": {
+      "email": "arnnab.tripathy@tcs.com"
+    }
+  },
+  "host": "arnnabtripathy-test.apigee.net",
+  "schemes": [
+    "http"
+  ],
+  "basePath": "/Policy",
+  "paths": {
+    "/sayHello": {
+      "get": {
+        "operationId": "GET /sayHello",
+        "summary": "",
+        "responses": {
+          "200": {
+            "description": "successful operation"
+          }
+        }
+      }
+    }
+  }
+}

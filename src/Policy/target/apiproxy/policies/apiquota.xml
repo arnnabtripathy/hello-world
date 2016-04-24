@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><Quota async="false" continueOnError="false" enabled="true" name="apiquota" type="calendar">
+  <DisplayName>apiquota</DisplayName>
+  <Allow count="2500" countRef="request.header.allowed_quota"/>
+  <Interval ref="request.header.quota_count">10</Interval>
+  <Distributed>false</Distributed>
+  <Synchronous>false</Synchronous>
+  <TimeUnit ref="request.header.quota_timeout">day</TimeUnit>
+  <StartTime>2016-04-15 18:22:19</StartTime>
+</Quota>

@@ -1,0 +1,78 @@
+{
+    "configurations": [
+        {
+            "name": "test",
+            "policies": [
+            
+            	{
+            		"name":"apiquota.xml",
+            		"tokens": [
+            			{
+            				"xpath": "/Quota/Interval",
+                         	"value": "10"
+                        }
+            		]
+            	}
+            	
+            ],
+            "proxies": [
+                {
+                    "name": "default.xml",
+                    "tokens": [
+                        {
+                            "xpath": "/ProxyEndpoint/HTTPProxyConnection/BasePath",
+                            "value": "/Policy"
+                        }
+                    ]
+                }
+            ],
+            "targets": [
+                {
+                    "name": "default.xml",
+                    "tokens": [
+                        {
+                            "xpath": "/TargetEndpoint/HTTPTargetConnection/URL",
+                            "value": "http://yahoo.com"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "prod",
+            "policies": [
+               {
+            		"name":"apiquota.xml",
+            		"tokens": [
+            			{
+            				"xpath": "/Quota/Interval",
+                         	"value": "20"
+                        }
+            		]
+            	}
+            ],
+            "proxies": [
+                {
+                    "name": "default.xml",
+                    "tokens": [
+                        {
+                            "xpath": "/ProxyEndpoint/HTTPProxyConnection/BasePath",
+                            "value": "/Policy"
+                        }
+                    ]
+                }
+            ],
+            "targets": [
+                {
+                    "name": "default.xml",
+                    "tokens": [
+                        {
+                            "xpath": "/TargetEndpoint/HTTPTargetConnection/URL",
+                            "value": "http://bbc.com"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

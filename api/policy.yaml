@@ -1,0 +1,47 @@
+swagger: "2.0"
+info:
+  version: "0.0.1"
+  title: Hello World App
+# during dev, should point to your local machine
+host: localhost:10010
+# basePath prefixes all resource paths 
+basePath: /policy/v1
+# 
+schemes:
+  # tip: remove http to make production-grade
+  - http
+  - https
+# format of bodies a client can send (Content-Type)
+consumes:
+  - application/json
+# format of the responses to the client (Accepts)
+produces:
+  - application/json
+# Defining the policy
+x-a127-services:
+  apiquota:
+    provider: volos-quota-memory
+    options:
+      timeUnit: day
+      interval: 2
+      allow: 2500
+paths:
+
+  /sayHello:
+    get:
+      description: Retrieves 
+      # Apply the quota policy
+      x-a127-apply:
+        apiquota:
+          pipe: request
+          endPoint: proxy
+      responses:
+        "200":
+          description: Everything works out well.
+  
+# complex objects have schema definitions
+definitions:
+  HelloWorldResponse:
+    type: string
+  ErrorResponse:
+    type: string

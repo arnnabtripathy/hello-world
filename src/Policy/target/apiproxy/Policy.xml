@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><APIProxy name="Policy" revison="1">
+  <CreatedAt>1460724859</CreatedAt>
+  <Description>Hello World App</Description>
+  <ProxyEndpoints>
+    <ProxyEndpoint>default</ProxyEndpoint>
+  </ProxyEndpoints>
+  <TargetEndpoints>
+    <TargetEndpoint>default</TargetEndpoint>
+  </TargetEndpoints>
+</APIProxy>
